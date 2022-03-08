@@ -1,8 +1,73 @@
 <html>
   <head>
-    <title>SUCCESSO</title>
+    <title>Pagina di login</title>
+    <link rel="stylesheet" href="login.css" type="text/css">
+    <script  src="login.js"></script>
   </head>
+
   <body>
-    <h1>IL LINK FUNZIONA</h1>
-  </body>
+    <header class="header-menu">
+      <h1> Dati accesso utente </h1>
+    </header>
+
+	  <section>
+		  <h1> Login & Password </h1>
+
+      <form name="scheda" method="post" action="login_utente.php">
+        <table>
+		      <tr>
+		      <td>Nome:</td><td><input type="text" name="nome" placeholder="Nome utente*"></td>
+		      </tr>
+
+          <tr><tr><tr><tr><tr>
+
+          <tr>
+		      <td>Password:</td><td><input type="text" name="passwd" placeholder="Passoword*"></td>
+		      </tr>
+
+		      <tr><tr></tr>
+
+		      <tr>
+		      <td><input type="button" onclick="return validateForm()" value="LOGIN" /></td>
+		      <td><input type="reset" value="RESET"></td>
+          </tr>
+
+          <hr>
+        </table>
+      </form>
+
+      <div name="elencoErrori" style="position:relative; top:80px; left:50px; width:300px;color:red;"></div>
+
+    </section>
+
+	  <aside>
+      <h1>Informazioni</h1>
+      <h2>* indica che il campo è obbligatorio</p>
+
+      <br>
+
+      <h2>Utente</p>
+      <ul>
+        <li>· caratteri, numeri e caratteri speciali consentiti</li>
+	    </ul>
+
+      <br>
+
+      <h2>Password </p>
+	    <ul>
+        <li>· almento 8 caratteri</li><br>
+        <li>· massimo 16 caratteri</li><br>
+		    <li>· almeno una maiuscola</li><br>
+		    <li>· almeno una minuscola</li><br>
+		    <li>· almeno un numero</li><br>
+		    <li>· almeno un carattere speciale</li><br>
+      </ul>
+
+    </aside>
+
+    <footer>
+      <small>Pagina creata a cura di Matteo Mercurio della scuola ITI Bosco Lucarelli di Benevento.</small>
+    </footer>
+
+	</body>
 </html>
