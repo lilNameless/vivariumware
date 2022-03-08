@@ -1,4 +1,4 @@
-function openCity(info, elmnt, color) {
+function openTab(info, elmnt, color) {
   // Hide all elements with class="tabcontent" by default */
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");

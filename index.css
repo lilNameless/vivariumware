@@ -99,9 +99,3 @@ a {
   padding: 50px;
   text-align: center;
 }
-
-/*Colore specifico per ogni tab(Usato per sicurezza)*/
-#London {background-color:#777;}
-#Paris {background-color:#777;}
-#Tokyo {background-color:#777;}
-#Oslo {background-color:#777;}
