@@ -1,10 +1,10 @@
-function validateForm(){
-  var nome=document.getElementsByName("nome")[0].value;
+function convalida(){
+  var nome=document.getElementsByName("username")[0].value;
   var pass=document.getElementsByName('passwd')[0].value;
   var elencoErrori=document.getElementsByName('elencoErrori')[0];
   elencoErrori.innerHTML="";
   var errori=[];
-  var regExpPass = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,16}$/
+  var regExpPass = /^(?=.*[0-9])(?=.*[!@#$%^&*,.])[a-zA-Z0-9!@#$%^&*,.]{8,16}$/
 
   if (nome==null || nome=="") {
     errori.push("Il nome utente è obbligatorio;<br>");
@@ -22,7 +22,7 @@ function validateForm(){
     }
     return false;
   } else {
-    alert("ok");
+    alert("Success");
     document.forms[0].submit();
   }
 }
