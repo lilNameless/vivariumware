@@ -2,11 +2,11 @@
 $host="localhost";
 $uname="root";
 $pass="root";
-$utente = $_POST['username'];
+$username = $_POST['username'];
 $passwd = $_POST['passwd'];
 session_start();
 // connessione al db
-$conn= mysqli_connect($host, "root", "", "5IB");
+$conn= mysqli_connect($host, "root", "", "vivariumware");
 if (!($conn))
 //if (mysqli_connect_errno($conn))
  {
@@ -14,14 +14,14 @@ if (!($conn))
   die();
  }
 // inserimento utente
-$query = "SELECT * FROM UTENTI WHERE nome='$utente' and passwd='$passwd';";
+$query = "SELECT * FROM utente WHERE username='$username' and passwd='$passwd';";
 
 $res = mysqli_query($conn, $query);
 $nr=mysqli_num_rows($res);
 if ($nr == 1)
  {
 //  session_start();
-  $_SESSION['user']= $utente;
+  $_SESSION['user']= $username;
   mysqli_free_result($res);
   mysqli_close($conn);
   header("Location: http://localhost/5IB/progetto/completo/login.php");
