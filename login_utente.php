@@ -6,6 +6,7 @@ $username = $_POST['username'];
 $passwd = $_POST['passwd'];
 session_start();
 // connessione al db
+
 $conn= mysqli_connect($host, "root", "", "vivariumware");
 if (!($conn))
 //if (mysqli_connect_errno($conn))
@@ -24,7 +25,7 @@ if ($nr == 1)
   $_SESSION['user']= $username;
   mysqli_free_result($res);
   mysqli_close($conn);
-  header("Location: http://localhost/5IB/progetto/completo/login.php");
+  //header("Location: http://localhost/5IB/progetto/completo/login.php");
   exit;
  }
  else
@@ -34,7 +35,7 @@ if ($nr == 1)
   mysqli_free_result($res);
   mysqli_close($conn);
   //echo "torna alla pagina di <a href=\"http://localhost/5IB/progetto/completo/login.html\">login</a>";
-  header("Location: http://localhost/5IB/progetto/completo/login.php");
+  //header("Location: http://localhost/5IB/progetto/completo/login.php");
   exit;
  }
 
