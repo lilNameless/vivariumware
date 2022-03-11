@@ -2,11 +2,11 @@
 $host="localhost";
 $uname="root";
 $pass="root";
-$utente = $_POST['nome'];
+$utente = $_POST['username'];
 $passwd = $_POST['passwd'];
 session_start();
 // connessione al db
-$conn= mysqli_connect($host, "root", "root", "5IB");
+$conn= mysqli_connect($host, "root", "", "5IB");
 if (!($conn))
 //if (mysqli_connect_errno($conn))
  {
