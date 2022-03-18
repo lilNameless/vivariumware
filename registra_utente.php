@@ -2,23 +2,23 @@
 $host="localhost";
 $uname="root";
 $pass="root";
-$utente = $_POST['nome'];
+$username = $_POST['username'];
 $passwd = $_POST['passwd'];
 //session_start();
-// connessione al db 
-$conn= mysqli_connect($host, "root", "root", "5IB");
+// connessione al db
+$conn= mysqli_connect($host, "root", "", "vivariumware");
 
-if (mysqli_connect_errno($conn))
- { 
+if (!$conn)
+ {
  // windows.alert("errore connessione al database");
-  die(); 
+  die();
  }
 // inserimento utente
-$query = "INSERT INTO UTENTI  (nome,passwd) VALUES ('$utente','$passwd');";
+$query = "INSERT INTO utente (username,passwd) VALUES ('$username','$passwd');";
 
 $res = mysqli_query($conn, $query);
 if (!$res)
- { 
+ {
  //echo ("<script language='javascript'>
  //            window.alert('Error saving record.')
   //           window.location.href='javascript:history.back()'
@@ -26,8 +26,8 @@ if (!$res)
   //         </script>");
 
 
-  echo("errore nell'nsert dell'utente nel database");
-  
+  echo("errore nell'insert dell'utente nel database");
+
   mysqli_free_result($res);
   mysqli_close($conn);
   header("Location: http://localhost/5IB/progetto/completo/registra.html");
@@ -44,4 +44,3 @@ if (!$res)
 
 
 ?>
-
