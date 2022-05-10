@@ -1,6 +1,6 @@
 /*PRIMA INTERSEZIONE*/
 .parallax1 {
-  background-image: url("home.png");
+  background-image: url("pic/home.png");
   min-height: 800px;
   background-attachment: fixed;
   background-position: center;
@@ -23,7 +23,7 @@
 
 /*SECONDA INTERSEZIONE*/
 .parallax2{
-  background-image: url("videogames.jpg");
+  background-image: url("pic/videogames.jpg");
   min-height: 800px;
   background-attachment: fixed;
   background-position: center;
@@ -48,7 +48,7 @@
 
 /*TERZA INTERSEZIONE*/
 .parallax3 {
-  background-image: url("3rd_intersection.jpg");
+  background-image: url("pic/3rd_intersection.jpg");
   min-height: 800px;
   background-attachment: fixed;
   background-position: center;
