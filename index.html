@@ -1,79 +1,25 @@
 <html>
-  <head>
-    <title>Gaming4Ever</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-  </head>
+    <head>
+        <title>index test</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="script.js"></script>
+    </head>
 
-  <body>
-    <!--PRIMA INTERSEZIONE-->
-    <div class="parallax1"></div>
-
-    <!--Primo blocco della parallasse parallax1-->
-    <div class="p1">Ciao Gamer, giochiamo ad un gioco?
-      <div style="font-size:24px">
-        <p>So bene che sei un appassionato di videogiochi e penso che te ne sei accorto anche tu, dato che sei stato
-          trasportato in questo sito.</p>
-        <p>Prima di giocare sono necessarie le presentazioni!</p>
-      </div>
-    </div>
-
-    <!--SECONDA INTERSEZIONE-->
-    <div class="parallax2"></div>
-
-    <!--Primo blocco della parallasse parallax2-->
-    <div class="p2">
-      <p>BENVENUTO A "Gaming4Ever"</p>
-      <p style="font-size:24px">
-        In questo sito potrai trovare una mia top di videogiochi che consiglio in base a una determinata categoria.
-        Ovviamente il sito non si basa solo su dei miei consigli, ma bensì tu, utente, potrai conversare in real-time con
-        altri gamer,
-        condividendo la tua opinione o i tuoi consigli su i videogiochi da provare in base alla categoria desiderata.
-      </p>
-    </div>
-
-    <!--TERZA INTERSEZIONE-->
-    <div class="parallax3"></div>
-
-    <button class="tablink" onclick="openTab('Ricerca', this, '#777')" id="defaultOpen">Ricerca</button>
-    <button class="tablink" onclick="openTab('Chat', this, '#777')">Chat</button>
-    <button class="tablink" onclick="openTab('About me', this, '#777')">About me</button>
-    <button class="tablink" onclick="openTab('Accesso', this, '#777')">Accesso</button>
-
-    <!--Primo blocco della parallasse parallax3-->
-    <div class="p3">
-      <!--Prima tab-->
-      <div id="Ricerca" class="tabcontent">
-        <a href="ricerca/ricerca.html">
-          <h1>Ricerca</h1>
-          <p>Ricera in base a dei campi specifici</p>
-        </a>
-      </div>
-
-      <!--Seconda tab-->
-      <div id="Chat" class="tabcontent">
-        <a href="chat/chat.html">
-          <h1>Chat</h1>
-          <p>Lista delle chat</p>
-        </a>
-      </div>
-
-      <!--Terza tab-->
-      <div id="About me" class="tabcontent">
-        <a href="about/about_me.html">
-          <h1>About me</h1>
-          <p>Informazioni su di me "The Creator"</p>
-        </a>
-      </div>
-
-      <!--Quarta tab-->
-      <div id="Accesso" class="tabcontent">
-        <a href="login/accesso.html">
-          <h1>Accesso</h1>
-          <p>Una pagina di accesso per l'utente</p>
-        </a>
-      </div>
-      <!--FINE PAGINA HOME-->
-    </div>
-  </body>
+    <body>
+        <div class="header" id="top_bar">
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="test_index.html">Home</a>
+                <a href="ricerca/ricerca.html">Ricerca</a>
+                <a href="chat/chat.html">Chat</a>
+                <a href="chat/chat.html">About me</a>
+            </div>
+            
+            <div id="main">
+                <img onclick="openNav()" src="pic/sidebar_icon.jpg" width="60" height="60">
+                <a href="login/login_index.html"><img src="pic/user-icon.png" width="60" height="60" align="right"></a>
+                <p align="center" style="margin: 0">Gaming4Ever</p>
+            </div>
+        </div>
+    </body>
 </html>

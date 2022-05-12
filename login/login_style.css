@@ -4,7 +4,7 @@ body {
 }
 
 hr {
-    color: #4d4d4d;
+    color: #181818;
 }
 
 /* sign in FORM */
@@ -71,11 +71,6 @@ hr {
 #logreg-forms .form-reset, #logreg-forms .form-signup{ display: none; }
 
 #logreg-forms .form-signup input { margin-bottom: 2px;}
-
-.form-signup .social-login{
-    width:210px !important;
-    margin: 0 auto;
-}
 
 
 /* Mobile */

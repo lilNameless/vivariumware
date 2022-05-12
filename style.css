@@ -1,101 +1,82 @@
-/*PRIMA INTERSEZIONE*/
-.parallax1 {
-  background-image: url("pic/home.png");
-  min-height: 800px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: -15px;
+body {
+  background-color: #1F1F1F;
+  font-family: 'consolas';
+}
+
+#top_bar {
+  background: #636363;
+  color: #ffffff;
+  margin-top: -10px;
   margin-left: -8px;
   margin-right: -8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
-/*Parte successiva a parallax1*/
-.p1 {
-  height: 190px;
-  background-color:black;
-  font-size:36px;
-  color:white;
-  margin-left: -8px;
-  margin-right: -8px;
+/*SIDEBAR*/
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
 }
-
-/*SECONDA INTERSEZIONE*/
-.parallax2{
-  background-image: url("pic/videogames.jpg");
-  min-height: 800px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: -15px;
-  margin-left: -8px;
-  margin-right: -8px;
-  margin-bottom: -36px;
+  
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 }
-
-/*Parte successiva a parallax2*/
-.p2 {
-  height: 190px;
-  background-color:black;
-  font-size:36px;
-  color:white;
-  margin-left: -8px;
-  margin-right: -8px;
-  margin-bottom: -8px;
+  
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
 }
-
-/*TERZA INTERSEZIONE*/
-.parallax3 {
-  background-image: url("pic/3rd_intersection.jpg");
-  min-height: 800px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: -15px;
-  margin-left: -8px;
-  margin-right: -8px;
+  
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
-
-/*Parte successiva a parallax3*/
-.p3 {
-  height: 405px;
-  background-color:#777;
-  font-size:36px;
-  color:white;
-  margin-left: -8px;
-  margin-right: -8px;
-  margin-bottom: -8px;
-}
-
-a {
-  color: white;
-}
-
-/*Stile dei tab*/
-.tablink {
-  background-color: #555;
-  color: white;
-  float: left;
-  border: none;
-  outline: none;
+  
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
   cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
-  width: 25%;
-}
-
-/*Hover quando si passa col cursore sopra il bottone*/
-.tablink:hover {
-  background-color: #777;
-}
-
-/*Stile di default delle tab*/
-.tabcontent {
+  background-color: #111;
   color: white;
-  display: none;
-  padding: 50px;
-  text-align: center;
+  padding: 10px 15px;
+  border: none;
+}
+  
+.openbtn:hover {
+  background-color: #444;
+}
+  
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+}
+  
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
 }

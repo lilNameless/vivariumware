@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>Pagina di accesso</title>
-        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="login_style.css" type="text/css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     </head>
@@ -11,11 +11,11 @@
             <form class="form-signin" method="post" action="login.php">
                 <h1 class="h3 mb-3 font-weight-normal" style="text-align: center"><font color="#ffffff"> Login</font></h1>
 
-                <input type="email" id="inputEmail" class="form-control" placeholder="Indirizzo email" autofocus="" required>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Indirizzo email" required>
                 <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
                 
                 <button class="btn btn-success btn-block" type="submit"><i class="fas fa-sign-in-alt"></i> Login</button>
-                <div name="elencoErrori"></div>
+                <div name="elencoErrori" style="color: #FF0000"></div>
                 <!--a href="#" id="forgot_pswd">Forgot password?</a-->
                 <hr>
 

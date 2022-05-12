@@ -1,0 +1,101 @@
+/*PRIMA INTERSEZIONE*/
+.parallax1 {
+  background-image: url("pic/home.png");
+  min-height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -15px;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+/*Parte successiva a parallax1*/
+.p1 {
+  height: 190px;
+  background-color:black;
+  font-size:36px;
+  color:white;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+/*SECONDA INTERSEZIONE*/
+.parallax2{
+  background-image: url("pic/videogames.jpg");
+  min-height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -15px;
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-bottom: -36px;
+}
+
+/*Parte successiva a parallax2*/
+.p2 {
+  height: 190px;
+  background-color:black;
+  font-size:36px;
+  color:white;
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-bottom: -8px;
+}
+
+/*TERZA INTERSEZIONE*/
+.parallax3 {
+  background-image: url("pic/3rd_intersection.jpg");
+  min-height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -15px;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+/*Parte successiva a parallax3*/
+.p3 {
+  height: 405px;
+  background-color:#777;
+  font-size:36px;
+  color:white;
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-bottom: -8px;
+}
+
+a {
+  color: white;
+}
+
+/*Stile dei tab*/
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+/*Hover quando si passa col cursore sopra il bottone*/
+.tablink:hover {
+  background-color: #777;
+}
+
+/*Stile di default delle tab*/
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
