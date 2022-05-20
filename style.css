@@ -6,11 +6,21 @@ body {
 #top_bar {
   background: #636363;
   color: #ffffff;
+  display: block;
   margin-top: -10px;
   margin-left: -8px;
   margin-right: -8px;
   padding-top: 5px;
   padding-bottom: 5px;
+  display: absolute;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*SIDEBAR*/
